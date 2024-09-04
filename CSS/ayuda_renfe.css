@@ -1,0 +1,1136 @@
+main{
+    width: 100%;
+}
+#ContTitleAyuda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*-------------------Title-------------------*/
+.ContTitleFlexAyuda{
+    color: var(--color-blanco);
+    font-family: CoolveticaHv-Regular, Verdana, sans-serif;
+    width: 100%;
+    margin: 25px 0 55px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+.ContTitleFlexAyuda h2:nth-child(1){
+    font-size: 2.75rem;
+    font-family: CoolveticaHv-Regular, Verdana, sans-serif;
+}
+.ContTitleFlexAyuda h2:nth-child(2){
+    font-size: 1.2rem;
+    font-family: CoolveticaEl-Regular, Verdana, sans-serif;
+    font-weight: 100;
+}
+/*-------------------Grid-------------------*/
+#ContAyudaRapidaGrid,
+#ContAyudaRapidaGrid_Movil{
+    color: #fff;
+    margin: 0px 60px 25px 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+#ContAyudaRapidaGrid_Movil{
+    display: none;
+}
+.ContAyudaRapidaGrid_Movil_dobles{
+    display: flex;
+    column-gap: 20px;
+}
+.ContAyudaRapida{
+    max-width: 302px;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 150ms;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContAyudaRapida:hover{
+    background: #2c2c2c;
+}
+/*-------------------Grids Dudas-------------------*/
+#ContDudas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+#ContDudas_Movil{
+    display: none;
+}
+/*-------------------Grid Dudas 1-------------------*/
+.ButtonHelp_uno{
+    background: transparent;
+    background-image: url(../IMG/ayuda/ayuda-hablemos.jpeg);
+    background-position: center;
+    background-size: cover;
+
+    width: 240px;
+    height: 234.17px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 90px;
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: 350ms;
+}
+.ButtonHelp_uno h3:nth-child(1){
+    padding: 55px 118px 20px 22px;
+    text-align: left;
+    font-size: 1.1rem;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%);
+    transition: 250ms;
+}
+/*-------------------Grid Dudas 2-------------------*/
+.ButtonHelp_dos{
+    background: transparent;
+    background-image: url(../IMG/ayuda/ayuda-escribenos.jpeg);
+    background-position: 0px -34px;
+    background-size: cover;
+
+    width: 240px;
+    height: 234.17px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 90px;
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: 350ms;
+}
+.ButtonHelp_dos h3:nth-child(1){
+    padding: 55px 133px 38px 22px;
+    text-align: left;
+    font-size: 1.1rem;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%);
+    transition: 250ms;
+}
+/*-------------------Grid Dudas 3-------------------*/
+.ButtonHelp_tres{
+    background: transparent;
+    background-image: url(../IMG/ayuda/condiciones-de-viaje.jpeg);
+    background-position: center;
+    background-size: cover;
+
+    width: 240px;
+    height: 234.17px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 90px;
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: 350ms;
+}
+.ButtonHelp_tres h3:nth-child(1){
+    padding: 55px 118px 20px 22px;
+    text-align: left;
+    font-size: 1.1rem;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%);
+    transition: 250ms;
+}
+/*-------------------Grid Dudas 4-------------------*/
+.ButtonHelp_cuatro{
+    background: transparent;
+    background-image: url(../IMG/ayuda/objetos-perdidos.jpeg);
+    background-position: -152px -18px;
+
+    width: 240px;
+    height: 234.17px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 90px;
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: 350ms;
+}
+.ButtonHelp_cuatro h3:nth-child(1){
+    padding: 55px 118px 20px 22px;
+    text-align: left;
+    font-size: 1.1rem;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%);
+    transition: 250ms;
+}
+/*------------------hovers dudas-------------------*/
+.ButtonHelp_uno:hover,
+.ButtonHelp_dos:hover,
+.ButtonHelp_tres:hover,
+.ButtonHelp_cuatro:hover{
+    filter: brightness(1);
+}
+
+.ButtonHelp_uno:hover h3:nth-child(1),
+.ButtonHelp_tres:hover h3:nth-child(1),
+.ButtonHelp_cuatro:hover h3:nth-child(1){
+    padding: 32px 118px 20px 22px;
+}
+
+.ButtonHelp_dos:hover h3:nth-child(1){
+    padding: 35px 133px 38px 22px;
+}
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+
+/*------------------tablet-------------------*/
+
+@media only screen and (max-width: 1024px){
+/*menú*/
+    #check:checked ~ .nav-menu {
+        height: 430px;
+    }
+    .nav-menu li {
+        margin-bottom: 0px;
+    }
+    .nav-menu li a {
+        padding: 12px;
+        font-size: 15px;
+    }
+/*menú medidas arrow*/
+    #arrow_menu_1{
+        margin-left: 152px;
+        transition: 170ms;
+    }
+    #arrow_menu_2{
+        margin-left: 109px;
+        transition: 170ms;
+    }
+    #arrow_menu_3{
+        margin-left: 126px;
+        transition: 170ms;
+    }
+    #arrow_menu_4{
+        margin-left: 150px;
+        transition: 170ms;
+    }
+    #arrow_menu_5{
+        margin-left: 114px;
+        transition: 170ms;
+    }
+/*menú medidas barra*/
+    #linea_menu_vertical {
+        width: 323px;
+    }
+/*buscador*/
+    .container {
+        max-width: 657px;
+        margin: 55px auto;
+    }
+/*idiomas*/
+    #check_idiomas:checked ~ .nav-menu-idioma {
+        height: 163px;
+    }
+    .nav-menu-idioma {
+        gap: 38px;
+        font-size: 17px;
+    }
+/*cuerpo texto del apartado ayuda*/
+    .ContTitleFlexAyuda h2:nth-child(1) {
+        font-size: 2.45rem;
+    }
+    #ContAyudaRapidaGrid {
+        margin: 0px 130px 25px 130px;
+        gap: 20px;
+    }
+/*medidas button help*/
+    .ButtonHelp_uno,
+    .ButtonHelp_dos,
+    .ButtonHelp_tres,
+    .ButtonHelp_cuatro {
+        width: 180px;
+        height: 190.17px;
+        margin-bottom: 70px;
+    }
+    .ButtonHelp_uno h3:nth-child(1) {
+        padding: 35px 35px 20px 22px;
+        font-size: 0.99rem;
+    }
+    .ButtonHelp_dos h3:nth-child(1) {
+        padding: 40px 83px 36px 22px;
+        font-size: 0.99rem;
+    }
+    .ButtonHelp_tres h3:nth-child(1) {
+        padding: 35px 60px 21px 22px;
+        font-size: 0.99rem;
+    }
+    .ButtonHelp_cuatro h3:nth-child(1) {
+        padding: 35px 70px 20px 22px;
+        font-size: 0.99rem;
+    }
+/*medidas button help hovers*/
+    .ButtonHelp_uno:hover h3:nth-child(1){
+        padding: 25px 35px 20px 22px;
+    }
+    .ButtonHelp_dos:hover h3:nth-child(1){
+        padding: 30px 83px 36px 22px;
+    }
+    .ButtonHelp_tres:hover h3:nth-child(1){
+        padding: 25px 60px 21px 22px;
+    }
+    .ButtonHelp_cuatro:hover h3:nth-child(1){
+        padding: 25px 70px 20px 22px;
+    }
+/*footer*/
+    #ContInfoFooter {
+        padding: 58px 50px;
+    }
+    #ContPolitica p {
+        padding: 25px 184px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 768px){
+/*menú*/
+    #check:checked ~ .nav-menu {
+        height: 430px;
+    }
+    .nav-menu li {
+        margin-bottom: 0px;
+    }
+    .nav-menu li a {
+        padding: 12px;
+        font-size: 15px;
+    }
+/*menú medidas arrow*/
+    #arrow_menu_1{
+        margin-left: 152px;
+        transition: 170ms;
+    }
+    #arrow_menu_2{
+        margin-left: 109px;
+        transition: 170ms;
+    }
+    #arrow_menu_3{
+        margin-left: 126px;
+        transition: 170ms;
+    }
+    #arrow_menu_4{
+        margin-left: 150px;
+        transition: 170ms;
+    }
+    #arrow_menu_5{
+        margin-left: 114px;
+        transition: 170ms;
+    }
+/*menú medidas barra*/
+    #linea_menu_vertical {
+        width: 323px;
+        left: 224px;
+    }
+/*buscador*/
+    .container {
+        max-width: 540px;
+    }
+    .search-input-box input {
+        height: 54px;
+        padding: 0 60px 0 63px;
+        font-size: 20px;
+    }
+    #buscar {
+        top: 16px;
+        left: 25px;
+        width: 21px;
+    }
+    #cerrar {
+        top: 6px;
+        right: 25px;
+        font-size: 27px;
+    }
+/*idiomas*/
+    #check_idiomas:checked ~ .nav-menu-idioma {
+        height: 163px;
+    }
+    .nav-menu-idioma {
+        gap: 34px;
+        font-size: 17px;
+    }
+/*cuerpo texto del apartado ayuda*/
+    .ContTitleFlexAyuda h2:nth-child(1) {
+        font-size: 2.23rem;
+    }
+    #ContAyudaRapidaGrid {
+        margin: 0px 80px 25px 80px;
+        gap: 21px;
+    }
+    .ContAyudaRapida {
+        max-width: 302px;
+        height: 70px;
+        padding: 0px;
+        font-size: 13px;
+    }
+/*medidas button help*/
+    #ContDudas{
+        margin-bottom: 70px;
+    }
+    #ContDudas {
+        width: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px 30px;
+        justify-items: center;
+        align-content: center;
+    }
+    .ButtonHelp_uno,
+    .ButtonHelp_dos,
+    .ButtonHelp_tres,
+    .ButtonHelp_cuatro {
+        width: 180px;
+        height: 190.17px;
+        margin-bottom: 0px;
+    }
+    .ButtonHelp_uno h3:nth-child(1) {
+        padding: 35px 35px 20px 22px;
+        font-size: 0.99rem;
+    }
+    .ButtonHelp_dos h3:nth-child(1) {
+        padding: 40px 83px 36px 22px;
+        font-size: 0.99rem;
+    }
+    .ButtonHelp_tres h3:nth-child(1) {
+        padding: 35px 60px 21px 22px;
+        font-size: 0.99rem;
+    }
+    .ButtonHelp_cuatro h3:nth-child(1) {
+        padding: 35px 70px 20px 22px;
+        font-size: 0.99rem;
+    }
+/*medidas button help hovers*/
+    .ButtonHelp_uno:hover h3:nth-child(1){
+        padding: 25px 35px 20px 22px;
+    }
+    .ButtonHelp_dos:hover h3:nth-child(1){
+        padding: 30px 83px 36px 22px;
+    }
+    .ButtonHelp_tres:hover h3:nth-child(1){
+        padding: 25px 60px 21px 22px;
+    }
+    .ButtonHelp_cuatro:hover h3:nth-child(1){
+        padding: 25px 70px 20px 22px;
+    }
+/*footer*/
+    #ContInfoFooter {
+        padding: 58px 50px;
+    }
+    #check_footer_arrow:checked ~ #ContInfoFooter {
+        gap: 40px 30px;
+    }
+    #ContPolitica p {
+        padding: 25px 111px;
+        font-size: 15px;
+    }
+    #ContRedes {
+        margin: 0;
+    }
+    #ContConocenos {
+        width: 183px;
+        gap: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        border-width: 0;
+        border-style: solid;
+        border-image: linear-gradient( to bottom, #ffffff00, #000000, #ffffff00) 1 100%;
+    }
+    #redesFooter {
+        width: 28px;
+        transition: 250ms;
+    }
+}
+/*------------------movil-------------------*/
+@media only screen and (max-width: 720px){
+/*menú*/
+    header{
+        padding: 0px 18px;
+        margin-bottom: 7px;
+    }
+    .barrita_1 {
+        margin-bottom: 8px;
+    }
+    .barrita_1, .barrita_2 {
+        width: 31.4px;
+    }
+    #logo_renfe_white {
+        width: 84px;
+    }
+    #ContMasCosas {
+        gap: 12px;
+    }
+    #buscar_menu, #global, #usuario {
+        width: 19px;
+        height: 19px;
+    }
+    #check:checked ~ .nav-menu {
+        height: 325px;
+    }
+    .nav-menu {
+        align-items: center;
+    }
+    .nav-menu li {
+        margin-bottom: 0px;
+    }
+    .nav-menu li a {
+        padding: 12px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+/*menú medidas arrow*/
+    #arrow_menu_1{
+        margin-left: 152px;
+        transition: 170ms;
+    }
+    #arrow_menu_2{
+        margin-left: 109px;
+        transition: 170ms;
+    }
+    #arrow_menu_3{
+        margin-left: 126px;
+        transition: 170ms;
+    }
+    #arrow_menu_4{
+        margin-left: 150px;
+        transition: 170ms;
+    }
+    #arrow_menu_5{
+        margin-left: 114px;
+        transition: 170ms;
+    }
+/*menú medidas barra*/
+    #linea_menu_vertical {
+        display: none;
+    }
+/*buscador*/
+    .container {
+        max-width: 304px;
+    }
+    .search-input-box input {
+        height: 37px;
+        padding: 0 45px 0 42px;
+        font-size: 15px;
+    }
+    #buscar {
+        top: 10px;
+        left: 17px;
+        width: 17px;
+    }
+    #cerrar {
+        top: 5px;
+        right: 19px;
+        font-size: 17px;
+    }
+/*idiomas*/
+    #check_idiomas:checked ~ .nav-menu-idioma {
+        height: 163px;
+    }
+    .nav-menu-idioma {
+        gap: 30px;
+        font-size: 17px;
+    }
+/*cuerpo texto del apartado ayuda*/
+    .ContTitleFlexAyuda {
+        margin: 25px 0 36px 0;
+    }
+    .ContTitleFlexAyuda h2:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    .flexNoneH2 h2:nth-child(2){
+        display: none;
+    }
+    .flexNone h2:nth-child(1){
+        display: none;
+    }
+    .flexNone h2:nth-child(2){
+        display: block;
+        font-size: 1.5rem;
+        font-family: CoolveticaHv-Regular, Verdana, sans-serif;
+    }
+    #ContAyudaRapidaGrid,
+    #ContAyudaRapidaGrid_Movil{
+        margin: 0px 20px 50px 20px;
+        gap: 21px;
+    }
+    #ContAyudaRapidaGrid{
+        display: none;
+    }
+    #ContAyudaRapidaGrid_Movil{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    #ContAyudaRapidaGrid_Movil .unoPadding{
+        padding: 0px 36px;
+    }
+    
+    .ContAyudaRapida {
+        max-width: 100%;
+        width: 100%;
+        height: 70px;
+        padding: 0px;
+        font-size: 13px;
+        grid-row-start: span 2;
+    }
+/*medidas button help*/
+    #ContDudas,
+    #ContDudas_Movil{
+        margin-bottom: 0px;
+        gap: 25px 15px;
+    }
+    #ContDudas{
+        display: none;
+    }
+    #ContDudas_Movil{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+        align-content: center;
+    }
+    .ButtonHelp_uno,
+    .ButtonHelp_dos,
+    .ButtonHelp_tres,
+    .ButtonHelp_cuatro {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 0px;
+    }
+    .ButtonHelp_uno h3:nth-child(1) {
+        padding: 22px 35px 20px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_dos h3:nth-child(1) {
+        padding: 22px 54px 36px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_tres h3:nth-child(1) {
+        padding: 22px 35px 21px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_cuatro h3:nth-child(1) {
+        padding: 22px 70px 20px 22px;
+        font-size: 15px;
+    }
+/*medidas button help hovers*/
+    .ButtonHelp_uno:hover h3:nth-child(1){
+        padding: 22px 35px 20px 22px;
+    }
+    .ButtonHelp_dos:hover h3:nth-child(1){
+        padding: 22px 54px 36px 22px;
+    }
+    .ButtonHelp_tres:hover h3:nth-child(1){
+        padding: 22px 35px 21px 22px;
+    }
+    .ButtonHelp_cuatro:hover h3:nth-child(1){
+        padding: 22px 70px 20px 22px;
+    }
+/*footer*/
+    #ContInfoFooter {
+        padding: 58px 50px;
+    }
+    #check_footer_arrow:checked ~ #ContInfoFooter {
+        gap: 26px 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+    }
+    #ContPolitica p {
+        padding: 25px 50px;
+        font-size: 15px;
+    }
+    #ContRedes {
+        margin: 0;
+        flex-direction: row;
+    }
+    #ContRedes p {
+        display: none;
+    }
+    #ContDropdown {
+        padding: 0;
+    }
+    .contAccordeon {
+        width: 290px;
+        margin-bottom: 37px;
+    }
+    .accHeight {
+        height: 147px;
+    }
+    #ContConocenos {
+        display: none;
+    }
+    #redesFooter {
+        width: 28px;
+        transition: 250ms;
+    }
+}
+@media only screen and (max-width: 480px){
+/*menú*/
+    header{
+        padding: 0px 18px;
+        margin-bottom: 7px;
+    }
+    .barrita_1 {
+        margin-bottom: 8px;
+    }
+    .barrita_1, .barrita_2 {
+        width: 31.4px;
+    }
+    #logo_renfe_white {
+        width: 84px;
+    }
+    #ContMasCosas {
+        gap: 12px;
+    }
+    #buscar_menu, #global, #usuario {
+        width: 19px;
+        height: 19px;
+    }
+    #check:checked ~ .nav-menu {
+        height: 325px;
+    }
+    .nav-menu {
+        align-items: center;
+    }
+    .nav-menu li {
+        margin-bottom: 0px;
+    }
+    .nav-menu li a {
+        padding: 12px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+/*menú medidas arrow*/
+    #arrow_menu_1{
+        margin-left: 152px;
+        transition: 170ms;
+    }
+    #arrow_menu_2{
+        margin-left: 109px;
+        transition: 170ms;
+    }
+    #arrow_menu_3{
+        margin-left: 126px;
+        transition: 170ms;
+    }
+    #arrow_menu_4{
+        margin-left: 150px;
+        transition: 170ms;
+    }
+    #arrow_menu_5{
+        margin-left: 114px;
+        transition: 170ms;
+    }
+/*menú medidas barra*/
+    #linea_menu_vertical {
+        display: none;
+    }
+/*buscador*/
+    .container {
+        max-width: 304px;
+    }
+    .search-input-box input {
+        height: 37px;
+        padding: 0 45px 0 42px;
+        font-size: 15px;
+    }
+    #buscar {
+        top: 10px;
+        left: 17px;
+        width: 17px;
+    }
+    #cerrar {
+        top: 5px;
+        right: 19px;
+        font-size: 17px;
+    }
+/*idiomas*/
+    #check_idiomas:checked ~ .nav-menu-idioma {
+        height: 163px;
+    }
+    .nav-menu-idioma {
+        gap: 30px;
+        font-size: 17px;
+    }
+/*cuerpo texto del apartado ayuda*/
+    .ContTitleFlexAyuda {
+        margin: 25px 0 36px 0;
+    }
+    .ContTitleFlexAyuda h2:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    .flexNoneH2 h2:nth-child(2){
+        display: none;
+    }
+    .flexNone h2:nth-child(1){
+        display: none;
+    }
+    .flexNone h2:nth-child(2){
+        display: block;
+        font-size: 1.5rem;
+        font-family: CoolveticaHv-Regular, Verdana, sans-serif;
+    }
+    #ContAyudaRapidaGrid,
+    #ContAyudaRapidaGrid_Movil{
+        margin: 0px 20px 50px 20px;
+        gap: 21px;
+    }
+    #ContAyudaRapidaGrid{
+        display: none;
+    }
+    #ContAyudaRapidaGrid_Movil{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    #ContAyudaRapidaGrid_Movil .unoPadding{
+        padding: 0px 36px;
+    }
+    
+    .ContAyudaRapida {
+        max-width: 100%;
+        width: 100%;
+        height: 70px;
+        padding: 0px;
+        font-size: 13px;
+        grid-row-start: span 2;
+    }
+/*medidas button help*/
+    #ContDudas,
+    #ContDudas_Movil{
+        margin-bottom: 0px;
+        gap: 25px 15px;
+    }
+    #ContDudas{
+        display: none;
+    }
+    #ContDudas_Movil{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+        align-content: center;
+    }
+    .ButtonHelp_uno,
+    .ButtonHelp_dos,
+    .ButtonHelp_tres,
+    .ButtonHelp_cuatro {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 0px;
+    }
+    .ButtonHelp_uno h3:nth-child(1) {
+        padding: 22px 35px 20px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_dos h3:nth-child(1) {
+        padding: 22px 54px 36px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_tres h3:nth-child(1) {
+        padding: 22px 35px 21px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_cuatro h3:nth-child(1) {
+        padding: 22px 70px 20px 22px;
+        font-size: 15px;
+    }
+/*medidas button help hovers*/
+    .ButtonHelp_uno:hover h3:nth-child(1){
+        padding: 22px 35px 20px 22px;
+    }
+    .ButtonHelp_dos:hover h3:nth-child(1){
+        padding: 22px 54px 36px 22px;
+    }
+    .ButtonHelp_tres:hover h3:nth-child(1){
+        padding: 22px 35px 21px 22px;
+    }
+    .ButtonHelp_cuatro:hover h3:nth-child(1){
+        padding: 22px 70px 20px 22px;
+    }
+/*footer*/
+    #ContInfoFooter {
+        padding: 58px 50px;
+    }
+    #check_footer_arrow:checked ~ #ContInfoFooter {
+        gap: 26px 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+    }
+    #ContPolitica p {
+        padding: 25px 50px;
+        font-size: 15px;
+    }
+    #ContRedes {
+        margin: 0;
+        flex-direction: row;
+    }
+    #ContRedes p {
+        display: none;
+    }
+    #ContDropdown {
+        padding: 0;
+    }
+    .contAccordeon {
+        width: 290px;
+        margin-bottom: 37px;
+    }
+    .accHeight {
+        height: 147px;
+    }
+    #ContConocenos {
+        display: none;
+    }
+    #redesFooter {
+        width: 28px;
+        transition: 250ms;
+    }
+}
+@media only screen and (max-width: 360px){
+/*menú*/
+    header{
+        padding: 0px 18px;
+        margin-bottom: 7px;
+    }
+    .barrita_1 {
+        margin-bottom: 8px;
+    }
+    .barrita_1, .barrita_2 {
+        width: 31.4px;
+    }
+    #logo_renfe_white {
+        width: 84px;
+    }
+    #ContMasCosas {
+        gap: 12px;
+    }
+    #buscar_menu, #global, #usuario {
+        width: 19px;
+        height: 19px;
+    }
+    #check:checked ~ .nav-menu {
+        height: 325px;
+    }
+    .nav-menu {
+        align-items: center;
+    }
+    .nav-menu li {
+        margin-bottom: 0px;
+    }
+    .nav-menu li a {
+        padding: 12px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+/*menú medidas arrow*/
+    #arrow_menu_1{
+        margin-left: 152px;
+        transition: 170ms;
+    }
+    #arrow_menu_2{
+        margin-left: 109px;
+        transition: 170ms;
+    }
+    #arrow_menu_3{
+        margin-left: 126px;
+        transition: 170ms;
+    }
+    #arrow_menu_4{
+        margin-left: 150px;
+        transition: 170ms;
+    }
+    #arrow_menu_5{
+        margin-left: 114px;
+        transition: 170ms;
+    }
+/*menú medidas barra*/
+    #linea_menu_vertical {
+        display: none;
+    }
+/*buscador*/
+    .container {
+        max-width: 304px;
+    }
+    .search-input-box input {
+        height: 37px;
+        padding: 0 45px 0 42px;
+        font-size: 15px;
+    }
+    #buscar {
+        top: 10px;
+        left: 17px;
+        width: 17px;
+    }
+    #cerrar {
+        top: 5px;
+        right: 19px;
+        font-size: 17px;
+    }
+/*idiomas*/
+    #check_idiomas:checked ~ .nav-menu-idioma {
+        height: 163px;
+    }
+    .nav-menu-idioma {
+        gap: 30px;
+        font-size: 17px;
+    }
+/*cuerpo texto del apartado ayuda*/
+    .ContTitleFlexAyuda {
+        margin: 25px 0 36px 0;
+    }
+    .ContTitleFlexAyuda h2:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    .flexNoneH2 h2:nth-child(2){
+        display: none;
+    }
+    .flexNone h2:nth-child(1){
+        display: none;
+    }
+    .flexNone h2:nth-child(2){
+        display: block;
+        font-size: 1.5rem;
+        font-family: CoolveticaHv-Regular, Verdana, sans-serif;
+    }
+    #ContAyudaRapidaGrid,
+    #ContAyudaRapidaGrid_Movil{
+        margin: 0px 20px 50px 20px;
+        gap: 21px;
+    }
+    #ContAyudaRapidaGrid{
+        display: none;
+    }
+    #ContAyudaRapidaGrid_Movil{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    #ContAyudaRapidaGrid_Movil .unoPadding{
+        padding: 0px 36px;
+    }
+    
+    .ContAyudaRapida {
+        max-width: 100%;
+        width: 100%;
+        height: 70px;
+        padding: 0px;
+        font-size: 13px;
+        grid-row-start: span 2;
+    }
+/*medidas button help*/
+    #ContDudas,
+    #ContDudas_Movil{
+        margin-bottom: 0px;
+        gap: 25px 15px;
+    }
+    #ContDudas{
+        display: none;
+    }
+    #ContDudas_Movil{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+        align-content: center;
+    }
+    .ButtonHelp_uno,
+    .ButtonHelp_dos,
+    .ButtonHelp_tres,
+    .ButtonHelp_cuatro {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 0px;
+    }
+    .ButtonHelp_uno h3:nth-child(1) {
+        padding: 22px 35px 20px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_dos h3:nth-child(1) {
+        padding: 22px 54px 36px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_tres h3:nth-child(1) {
+        padding: 22px 35px 21px 22px;
+        font-size: 15px;
+    }
+    .ButtonHelp_cuatro h3:nth-child(1) {
+        padding: 22px 70px 20px 22px;
+        font-size: 15px;
+    }
+/*medidas button help hovers*/
+    .ButtonHelp_uno:hover h3:nth-child(1){
+        padding: 22px 35px 20px 22px;
+    }
+    .ButtonHelp_dos:hover h3:nth-child(1){
+        padding: 22px 54px 36px 22px;
+    }
+    .ButtonHelp_tres:hover h3:nth-child(1){
+        padding: 22px 35px 21px 22px;
+    }
+    .ButtonHelp_cuatro:hover h3:nth-child(1){
+        padding: 22px 70px 20px 22px;
+    }
+/*footer*/
+    #ContInfoFooter {
+        padding: 58px 50px;
+    }
+    #check_footer_arrow:checked ~ #ContInfoFooter {
+        gap: 26px 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+    }
+    #ContPolitica p {
+        padding: 25px 50px;
+        font-size: 15px;
+    }
+    #ContRedes {
+        margin: 0;
+        flex-direction: row;
+    }
+    #ContRedes p {
+        display: none;
+    }
+    #ContDropdown {
+        padding: 0;
+    }
+    .contAccordeon {
+        width: 290px;
+        margin-bottom: 37px;
+    }
+    .accHeight {
+        height: 147px;
+    }
+    #ContConocenos {
+        display: none;
+    }
+    #redesFooter {
+        width: 28px;
+        transition: 250ms;
+    }
+}

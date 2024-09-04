@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 800px;
+	margin: 73px auto;
+}
+.search-input-box{
+	width: 100%;
+	background-color: #171717;
+	border-radius: 30px 30px 30px 30px;
+	position: relative;
+	color: #fff;
+	font-weight: 100;
+}
+
+/*outline: none; / para que no salga el borde negro cuando se escriba*/
+
+.search-input-box input{
+	width: 100%;
+	height: 55px;
+	background: var(--color-blanco);
+	border: none;
+	outline: none;
+	border-radius: 50px;
+	padding: 0 73px 0 73px;
+	font-size: 22px;
+    border: 2px solid #171717;
+}
+#buscar{
+	position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 25px;
+	font-size: 22px;
+	filter: brightness(0.5);
+	cursor: pointer;
+}
+#cerrar{
+	position: absolute;
+    top: 3px;
+    right: 25px;
+
+	font-size: 34px;
+    font-family: cursive;
+    font-weight: 100;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/*------------Contenedor de sugerencias------------*/
+
+.container-suggestions {
+	max-height: 0px;
+	opacity: 0;
+	pointer-events: none;
+	padding: 0;
+	overflow-y: auto;
+	transition: all .4s;
+}
+
+/*cuando la class este "active", se aplicarán los estilos*/
+
+.search-input-box.active .container-suggestions {
+	max-height: 280px;
+	opacity: 1;
+	pointer-events: auto;
+	padding: 10px 8px;
+}
+
+.search-input-box.active .container-suggestions li {
+	display: block;
+}
+
+.container-suggestions li {
+	list-style: none;
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 5px;
+    cursor: pointer;
+	display: none;
+}
+
+.container-suggestions li:hover{
+    background-color: #414b57;
+}
+
+/*last-child / selecciona el último elemento*/
+
+.container-suggestions li:last-child{
+    border-radius: 5px 5px 20px 20px;
+}

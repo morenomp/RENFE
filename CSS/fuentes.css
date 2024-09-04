@@ -1,0 +1,26 @@
+/*                  Heavy                  */
+@font-face{
+    font-family: CoolveticaHv-Regular;
+    src: url(../Fonts/CoolveticaHv-Regular.ttf);
+}
+
+
+/*                 Regular                 */
+@font-face{
+    font-family: CoolveticaLt-Regular;
+    src: url(../Fonts/CoolveticaLt-Regular.ttf);
+}
+
+
+/*                  Ligth                  */
+@font-face{
+    font-family: CoolveticaEl-Regular;
+    src: url(../Fonts/CoolveticaEl-Regular.ttf);
+}
+
+
+/*               Ultra Ligth               */
+@font-face{
+    font-family: CoolveticaUl-Regular;
+    src: url(../Fonts/CoolveticaUl-Regular.ttf);
+}
