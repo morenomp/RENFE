@@ -1,5 +1,3 @@
-# 🚆 RENFE — Rediseño web interactivo
-
 # 📌 **Resumen del proyecto**
 ¿De qué consta?
 
